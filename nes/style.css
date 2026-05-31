@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+
+}
+
+#wrap {
+    position: relative;
+    display: inline-block; 
+
+}
+
+.overlay {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.05s ease;
+}
+.overlay.pressed { 
+    opacity: 1;
+}
+
+.btn-circle { 
+    border-radius: 50%;
+    background: var(--skin-pressed, #5a0000);
+}
+.btn-pill   { 
+    background: #555;
+}
+.btn-dpad   {
+    background: rgba(255,255,255,0.22);
+    border-radius: 4px;
+}
