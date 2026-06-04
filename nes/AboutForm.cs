@@ -23,7 +23,7 @@ namespace Nespad {
             };
             try { icon.Image = Image.FromFile("icon.png"); } catch {}
             var name = new Label {
-                Text = "Nespad v1.01",
+                Text = "Nespad v1.0",
                 Font = new Font("Segoe UI", 9f),
                 TextAlign = ContentAlignment.MiddleCenter,
                 Width = 260,

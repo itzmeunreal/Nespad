@@ -3,6 +3,8 @@ namespace Nespad {
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem savelayoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadlayoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reloadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
@@ -15,6 +17,8 @@ namespace Nespad {
         private void InitializeComponent() {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savelayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadlayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -30,9 +34,13 @@ namespace Nespad {
             });
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+                this.savelayoutToolStripMenuItem,
+                this.loadlayoutToolStripMenuItem,
                 this.reloadToolStripMenuItem,
                 this.quitToolStripMenuItem
             });
+            this.savelayoutToolStripMenuItem.Text = "Save Layout";
+            this.loadlayoutToolStripMenuItem.Text = "Load Layout";
             this.reloadToolStripMenuItem.Text = "Reload";
             this.quitToolStripMenuItem.Text = "Quit";
             this.settingsToolStripMenuItem.Text = "Settings";

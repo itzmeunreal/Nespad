@@ -231,11 +231,11 @@ namespace Nespad {
         }
 
         private void SetListeningControls(bool en) {
-            btnlist.Enabled    = en;
-            clearbtn.Enabled   = en;
+            btnlist.Enabled = en;
+            clearbtn.Enabled = en;
             defaultbtn.Enabled = en;
-            okbtn.Enabled      = en;
-            cancelbtn.Enabled  = en;
+            okbtn.Enabled = en;
+            cancelbtn.Enabled = en;
         }
 
         private void OnSet(object s, EventArgs e) {
@@ -282,10 +282,10 @@ namespace Nespad {
         }
 
         internal static Dictionary<uint, string> DefaultMap() => new Dictionary<uint, string> {
-            {0x57, "dpad-up"},   {0x53, "dpad-down"},
+            {0x57, "dpad-up"}, {0x53, "dpad-down"},
             {0x41, "dpad-left"}, {0x44, "dpad-right"},
             {0x08, "btn-select"}, {0x0D, "btn-start"},
-            {0x25, "btn-b"},     {0x28, "btn-a"},
+            {0x25, "btn-b"}, {0x28, "btn-a"},
         };
 
         private static string DefaultName(uint vk) {
