@@ -24,8 +24,14 @@ namespace Nespad {
 
         internal Dictionary<uint, string> keymap = InputForm.DefaultMap();
         internal Dictionary<uint, string> displaymap = new Dictionary<uint, string> {
-            {0x57, "W"}, {0x53, "S"}, {0x41, "A"}, {0x44, "D"},
-            {0x08, "Backspace"}, {0x0D, "Enter"}, {0x25, "Left"}, {0x28, "Down"},
+            {0x57, "W"},
+            {0x53, "S"},
+            {0x41, "A"},
+            {0x44, "D"},
+            {0x08, "Backspace"},
+            {0x0D, "Enter"},
+            {0x25, "Left"},
+            {0x28, "Down"},
         };
         internal int activeskin = 0;
 

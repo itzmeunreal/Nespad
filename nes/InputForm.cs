@@ -91,13 +91,17 @@ namespace Nespad {
             leftpanel.Controls.Add(btnlist);
             var keylbl = new Label {
                 Text = "Current key",
-                Left = 140, Top = 8,
-                Width = 210, Height = 16,
+                Left = 140,
+                Top = 8,
+                Width = 210,
+                Height = 16,
                 ForeColor = SystemColors.GrayText
             };
             keylabel = new Label {
-                Left = 140, Top = 28,
-                Width = 210, Height = 26,
+                Left = 140,
+                Top = 28,
+                Width = 210,
+                Height = 26,
                 BorderStyle = BorderStyle.FixedSingle,
                 TextAlign = ContentAlignment.MiddleLeft,
                 Padding = new Padding(4, 0, 0, 0),
@@ -147,7 +151,8 @@ namespace Nespad {
             };
             okbtn = new Button {
                 Left = 210, 
-                Top = 284, Width = 70, 
+                Top = 284,
+                Width = 70, 
                 Height = 26,
                 Text = "OK", 
                 DialogResult = DialogResult.OK
@@ -282,10 +287,14 @@ namespace Nespad {
         }
 
         internal static Dictionary<uint, string> DefaultMap() => new Dictionary<uint, string> {
-            {0x57, "dpad-up"}, {0x53, "dpad-down"},
-            {0x41, "dpad-left"}, {0x44, "dpad-right"},
-            {0x08, "btn-select"}, {0x0D, "btn-start"},
-            {0x25, "btn-b"}, {0x28, "btn-a"},
+            {0x57, "dpad-up"},
+            {0x53, "dpad-down"},
+            {0x41, "dpad-left"},
+            {0x44, "dpad-right"},
+            {0x08, "btn-select"},
+            {0x0D, "btn-start"},
+            {0x25, "btn-b"},
+            {0x28, "btn-a"},
         };
 
         private static string DefaultName(uint vk) {
@@ -298,7 +307,7 @@ namespace Nespad {
                 case 0x0D: return "Enter";
                 case 0x25: return "Left";
                 case 0x28: return "Down";
-                default:   return $"VK {vk:X2}";
+                default:  return $"VK {vk:X2}";
             }
         }
     }
